@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://studentweb.cdm.depaul.edu/dedwar29/a7.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        
+        
+        <title>
+            Assignment #7 - JavaScript#1
+        </title>
+        
+        <style>
+        
+            body {background-color: lightblue;
+                font-size: 24px;}
+            
+            
+            input {font-size: 24px;}
+            
+            input:hover {background-color: lightgreen;}
+            
+          
+            
+        </style>
+        
+        <script>
+            function addNumbers() {
+                var value1 = parseFloat(document.getElementById("box1").value);
+                var value2 = parseFloat(document.getElementById("box2").value);
+                var total = value1 + value2;
+                document.getElementById("answer").innerHTML = total;
+                document.getElementById("sign").innerHTML = "+";
+                
+            }
+            
+            // make a function to subtract the numbers
+            function subtractNumbers () {
+                var value1 = parseFloat(document.getElementById("box1").value);
+                var value2 = parseFloat(document.getElementById("box2").value);
+                var total = value1 - value2;
+                document.getElementById("answer").innerHTML = total;
+                document.getElementById("sign").innerHTML = "-";
+                
+            }
+            
+            //make a function to multiply the numbers
+            function multiplyNumbers () {
+                var value1 = parseFloat(document.getElementById("box1").value);
+                var value2 = parseFloat(document.getElementById("box2").value);
+                var total = value1 * value2;
+                document.getElementById("answer").innerHTML = total;
+                document.getElementById("sign").innerHTML = "*";
+                
+            }
+            
+            //make a function to divide the numbrs
+            function divideNumbers() {
+                var value1 = parseFloat(document.getElementById("box1").value);
+                var value2 = parseFloat(document.getElementById("box2").value);
+                var total = value1 / value2;
+                document.getElementById("answer").innerHTML = total;
+                document.getElementById("sign").innerHTML = "&divide";
+                
+            }
+            //make a function to clear everything
+            function clearAll() {
+               document.getElementById("box1").value = "";
+                document.getElementById("box2").value = "";
+                document.getElementById("answer").innerHTML = "";
+                document.getElementById("sign").innerHTML = "&nbsp;";
+                
+            }
+            
+            
+        </script>
+        
+        
+    </head>
+    <body>
+    
+        <h1>
+            Math with JavaScript
+        </h1>
+        
+        <input type="text" size="5" id="box1">
+        
+        <span id="sign">&nbsp;</span>
+        
+        <input type="text" size="5" id="box2">
+        
+        = 
+        
+        <span id="answer"></span>
+        
+        <br><br>
+        
+        <input type="button" value="Add" onclick="addNumbers();">
+        
+        <input type="button" value="Subtract" onclick="subtractNumbers();">
+        
+        <input type="button" value="Multiply" onclick="multiplyNumbers();">
+        
+        <input type="button" value="Divide" onclick="divideNumbers();">
+        
+        <input type="button" value="Clear" onclick="clearAll();">
+        
+    
+</body></html>

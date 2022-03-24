@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://studentweb.cdm.depaul.edu/dedwar29/a6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <title> Assignment #6 - CSS Positioning #2 </title>
+        
+        <style>
+        
+          div#main {position: relative;
+                box-sizing: border-box;
+                background-color: maroon;
+                height: 800px;
+                width: 800px;
+                border: 5px solid white;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+                top: 150px;
+                left: 0px;
+                border: 5px solid black;}
+        
+            
+            div#dark1 {position: absolute;
+                    box-sizing: border-box;
+                    background-color: blue;
+                    height: 200px;
+                    width: 200px;
+                    z-index: 10;
+                    top: 150px;
+                    left: 50px;
+                    color: white;
+                    font-family: arial;
+                    font-size: 24px;
+                    background-image:url(ds1.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px 0px;
+                    border: 5px solid blue;}
+            
+            
+            div#dark2 {position: absolute;
+                    box-sizing: border-box;
+                    background-color: #f55353;
+                    height: 200px;
+                    width: 200px;
+                    z-index: 10;
+                    top: 150px;
+                    left: 290px;
+                    color: white;
+                    font-family: arial;
+                    font-size: 24px;
+                    background-image:url(ds2.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px 0px;
+                    border: 5px solid red;}
+            
+            
+            div#dark3 {position: absolute;
+                    box-sizing: border-box;
+                    background-color: #c1c101;
+                    height: 200px;
+                    width: 200px;
+                    z-index: 10;
+                    top: 150px;
+                    left: 530px;
+                    color: white;
+                    font-family: arial;
+                    font-size: 24px;
+                    background-image:url(ds3.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px 0px;
+                    border: 5px solid yellow;}
+            
+            div#flames {position: absolute;
+                    box-sizing: border-box;
+                    background-color: orange;
+                    height: 300px;
+                    width: 750px;
+                    z-index: -10;
+                    top: 110px;
+                    left: 20px;
+                    color: white;
+                    font-family: arial;
+                    font-size: 24px;
+                    background-image:url(flames.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px -350px;
+                    border: 5px solid black;} 
+            
+            
+            div#header {position: fixed;
+                box-sizing: border-box;
+                background-color: black;
+                height: 100px;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                z-index: 500;
+                font-size: 28px;
+                border: 5px solid maroon;}
+            
+            div#article {position: absolute;
+                    box-sizing: border-box;
+                    background-color: black;
+                    width: 700px;
+                    height: 300px;
+                    top: 450px;
+                    left: 43px;
+                    padding-left: 20px;
+                    padding-right: -10px;
+                    padding-top: 10px;
+                    overflow: auto;
+                    border: 5px solid orange;}
+            
+            
+             @font-face {font-family: my_font_1;
+                src: url(DarkSouls.ttf);}
+            
+            h1 {font-family: my_font_1;
+                text-align: center;
+                font-size: 48px;
+                letter-spacing: 3px;
+                color: white;
+                text-shadow: 5px 5px 0px maroon;
+                padding-bottom: 0px;
+                text-align: center;} 
+            
+            p {font-family: my_font_1;
+                font-size: 16px;
+                line-height: 22px;
+                text-indent: 30px;
+                color: white;
+                }
+            
+        </style>
+    
+    </head>
+    <body>
+        
+        <div id="header">
+            <h1> Dark Souls  </h1>
+        </div>
+        
+        <div id="main">
+            
+        <div id="article">
+            <p>
+            The world of Dark Souls is a world of cycles. Kingdoms rise and fall, ages come and go, and even time can end and restart as the flame fades and is renewed. These cycles are linked to the First Flame, a mysterious manifestation of life that divides and defines separate states such as heat and cold, or life and death. As the First Flame fades, these differences also begin to fade, such as life and death having little distinction, and humans becoming Undead. The onset of an Age of Dark, the time when the First Flame has fully died, is marked by endless nights, rampant undeath, time, space, and reality breaking down, lands collapsing and converging on one another, people mutating into monsters, darkness covering the world, and the Gods losing their power. To avoid this and prolong the Age of Fire, the bearer of a powerful soul must "link" themselves to the First Flame, becoming the fuel for another age. If this is not done, the First Flame will eventually die, and an Age of Dark will begin.
+            </p>    
+                
+                <p>
+                The powerful Lord Souls were taken from the First Flame, used to defeat the dragons, and then to establish kingdoms. Souls are inextricably (and inexplicably) linked to fire. Souls are life, and life is fire; it stands to reason that souls are fire, as well. Without the First Flame and without souls, there is no life. The bearer of a strong soul, called a Lord, who links themselves to the First Flame, is thus rekindling the flames with their own soul, returning life to it. In the end, one could expect that all souls will have been returned to the First Flame, and the Age of Fire will have effectively ended anyways.
+            </p>
+                <p>    
+                It is inevitable that people try to find a way around this, another way to continue the Age of Fire without making sacrifices, but in every case they fail. In the first Age of Fire, the Witch of Izalith attempted to create a duplicate of the First Flame using her witchcraft and a special soul, but failed catastrophically. Instead of making another First Flame, she had created a twisted Flame of Chaos that produced distortions of life, turning herself and all her daughters into demons. These demons were malevolent, and wandered the land. Gwyn gathered up his armies and fought the demons of Chaos, eventually driving them back and shackling the Bed of Chaos to bind them. Knowing that the Age of Fire was nearing its end, under the guidance of the primordial serpent Kingseeker Frampt, Gwyn offered himself to the First Flame to stave off the Dark. As the flames surged with new life, the knights who followed him in were burnt by the flames and now wander the world as the Black Knights, hollow shells of armor who attack indiscriminately.
+            </p>
+                <p>    
+                Before he left to link the First Flame, Gwyn gave fragments of his soul to his followers and allies. Ornstein, Gough, Ciaran, and Artorias, his four strongest knights who fought against the dragons, Seath the Paledrake, who betrayed the dragons and played a crucial role in the war, and was also granted the title of Duke and permission to build a grand archive to conduct his research, and the Four Kings of New Londo, who ruled a city of Undead. In time, another primordial serpent convinced the people of the human kingdom of Oolacile to delve into the darkness of the Abyss to unearth the grave of an ancient human. Whether through their actions or some other means, the primordial human - Manus - was resurrected and driven to madness, and his wild Humanity caused the people of Oolacile to mutate into abominations. Manus, Father of the Abyss, began to rapidly spread Dark and accelerate the growth of the Abyss, and would've started an early Age of Dark had he not been defeated. Even so, the kingdom of Oolacile was lost to the Abyss, and eventually forgotten in the modern day. Nothing remains in the present day to mark the passing of this land save for Dusk, the princess of Oolacile.
+            </p>
+            
+                <p>
+                Gwyn's youngest son Gwyndolin, together with Kingseeker Frampt, sheperds the humans by Gwyn's command. Together they built giant asylums to house the countless undead, hoping against hope that one of them would be chosen to defeat the Asylum demon, and fulfill their destiny. The Undead are sent on a quest to ring the Bells of Awakening, collect the Lordvessel, slay the bearers of  Gwynn's soul, then offer those souls to the Lordvessel to open the path to the Kiln of the First Flame. In doing so, the unnatural Undead are given true death and the living can enjoy another age of fire for a thousand years, while the Undead linked to the First Flame will continue to burn, alive and aware, until someone else comes to take their place. And thus, the cycle continues.
+                </p>
+                <br>
+                
+                <a href="https://darksouls.wiki.fextralife.com/Lore#:~:text=The%20world%20of%20Dark%20Souls,cold%2C%20or%20life%20and%20death."> https://darksouls.wiki.fextralife.com/Lore</a>
+                
+            <p></p>    
+        </div>    
+        
+        <div id="dark1"></div>
+            
+        <div id="dark2"></div>
+            
+        <div id="dark3"></div>
+            
+        <div id="flames"></div>
+        
+        </div>
+            
+            
+       
+    
+</body></html>
